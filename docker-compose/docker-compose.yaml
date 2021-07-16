@@ -69,7 +69,7 @@ services:
   # service.
   sourcegraph-frontend-0:
     container_name: sourcegraph-frontend-0
-    image: 'index.docker.io/sourcegraph/frontend:insiders@sha256:542e5155df86d5c9655980abf2c0222fe0cdcd1895f5aa93451cef9835b18c7a'
+    image: 'index.docker.io/sourcegraph/frontend:insiders@sha256:c65eb21788ded08d2fcdd140e3a420f43f8a953ba48297a515c1f764ac60fe53'
     cpus: 4
     mem_limit: '8g'
     environment:
@@ -113,7 +113,7 @@ services:
   #
   sourcegraph-frontend-internal:
     container_name: sourcegraph-frontend-internal
-    image: 'index.docker.io/sourcegraph/frontend:insiders@sha256:542e5155df86d5c9655980abf2c0222fe0cdcd1895f5aa93451cef9835b18c7a'
+    image: 'index.docker.io/sourcegraph/frontend:insiders@sha256:c65eb21788ded08d2fcdd140e3a420f43f8a953ba48297a515c1f764ac60fe53'
     cpus: 4
     mem_limit: '8g'
     environment:
@@ -159,7 +159,7 @@ services:
   #
   gitserver-0:
     container_name: gitserver-0
-    image: 'index.docker.io/sourcegraph/gitserver:insiders@sha256:172863bb7c3f013114dcf40f46f1622b7701ed18eadbcaaaafb78d047dcf2742'
+    image: 'index.docker.io/sourcegraph/gitserver:insiders@sha256:1c5f5e1889d307e1eaf6b0d8c99a84c2408e3f7d92b10d930e287a2869f7ebb6'
     cpus: 4
     mem_limit: '8g'
     environment:
@@ -183,7 +183,7 @@ services:
   #
   zoekt-indexserver-0:
     container_name: zoekt-indexserver-0
-    image: 'index.docker.io/sourcegraph/search-indexer:insiders@sha256:89fa7d5eac6f9f3e8893a482650dffcea4d22be993328427679af7e3ddd08e10'
+    image: 'index.docker.io/sourcegraph/search-indexer:insiders@sha256:48a085c3bd1571ab44f6fa63340101a0d3554bfd729a83cf8bae80c81e7e8e56'
     mem_limit: '16g'
     environment:
       - GOMAXPROCS=8
@@ -203,7 +203,7 @@ services:
   #
   zoekt-webserver-0:
     container_name: zoekt-webserver-0
-    image: 'index.docker.io/sourcegraph/indexed-searcher:insiders@sha256:76d7e8a7453caed03412064d2f8e40dd49b9df958edd846e5a91c514b840803e'
+    image: 'index.docker.io/sourcegraph/indexed-searcher:insiders@sha256:6050907a56cf446b8664b28e714adef7218c1835034536e2d4b3c6653189c65f'
     cpus: 8
     mem_limit: '50g'
     environment:
@@ -229,7 +229,7 @@ services:
   #
   searcher-0:
     container_name: searcher-0
-    image: 'index.docker.io/sourcegraph/searcher:insiders@sha256:33050fe0c71b66aa33b9c5337de012a9684eabbf990a9d4bea2e720a326a8382'
+    image: 'index.docker.io/sourcegraph/searcher:insiders@sha256:d080d01c6930e4e9df6b1b9a3310d71bcf606ce7fa029753b152be7f95b3bd36'
     cpus: 2
     mem_limit: '2g'
     environment:
@@ -257,7 +257,7 @@ services:
   #
   github-proxy:
     container_name: github-proxy
-    image: 'index.docker.io/sourcegraph/github-proxy:insiders@sha256:f47450cc45183a8e47339da33937795e6b0e12b66d6ec6237fd910dea41fa561'
+    image: 'index.docker.io/sourcegraph/github-proxy:insiders@sha256:494721099d87b35e35270c54d4a4eeb6658b7163f3212e10b0c8d00126131e72'
     cpus: 1
     mem_limit: '1g'
     environment:
@@ -275,7 +275,7 @@ services:
   #
   precise-code-intel-worker:
     container_name: precise-code-intel-worker
-    image: 'index.docker.io/sourcegraph/precise-code-intel-worker:insiders@sha256:4a437a77b5f10b40d2738e7117b5d243398aa998f4ae40f8d6984de927a5b315'
+    image: 'index.docker.io/sourcegraph/precise-code-intel-worker:insiders@sha256:721bb8de6399f5f9269f54760548545ead567f7b7ac6e92da1da90e26c6b7ab2'
     cpus: 2
     mem_limit: '4g'
     environment:
@@ -301,7 +301,7 @@ services:
   #
   query-runner:
     container_name: query-runner
-    image: 'index.docker.io/sourcegraph/query-runner:insiders@sha256:caf32e4cab53b72f360b0bfc4a748cf1f1fa9ac9c4d001b85531be4a606e2878'
+    image: 'index.docker.io/sourcegraph/query-runner:insiders@sha256:ce1597e323b10473df5c9403adbd0c3ee7d0598c96307489063283cb78a960c5'
     cpus: 1
     mem_limit: '1g'
     environment:
@@ -320,7 +320,7 @@ services:
   #
   repo-updater:
     container_name: repo-updater
-    image: 'index.docker.io/sourcegraph/repo-updater:insiders@sha256:60393182a305b440832e1d2652131ef1ac69a15715fc5af0aab6ca6739e5ce80'
+    image: 'index.docker.io/sourcegraph/repo-updater:insiders@sha256:ee02f68e24d7d210b167f3bbf60200fb01d9468f9bdf57987dee342ff73d9a7b'
     cpus: 4
     mem_limit: '4g'
     environment:
@@ -342,7 +342,7 @@ services:
   #
   worker:
     container_name: worker
-    image: 'index.docker.io/sourcegraph/worker:insiders@sha256:c724fc8d29c30135d30e41a798b6a7688b5eda0a3b9a7b74753faf7028c02b41'
+    image: 'index.docker.io/sourcegraph/worker:insiders@sha256:123693e85c1dd56cfb09fc3c4e9bcc3095c6e5053c8fe36411cecbc610861d16'
     cpus: 4
     mem_limit: '4g'
     environment:
@@ -363,7 +363,7 @@ services:
   #
   syntect-server:
     container_name: syntect-server
-    image: 'index.docker.io/sourcegraph/syntax-highlighter:insiders@sha256:83ff65809e6647b466bd400de4c438a32feeabe8e791b12e15c67c84529ad2de'
+    image: 'index.docker.io/sourcegraph/syntax-highlighter:insiders@sha256:8854665264522a86b711c732d803395478dab30f6df6197b5d0c1c7c21cd6261'
     cpus: 4
     mem_limit: '6g'
     healthcheck:
@@ -384,7 +384,7 @@ services:
   #
   symbols-0:
     container_name: symbols-0
-    image: 'index.docker.io/sourcegraph/symbols:insiders@sha256:8004299ef2d631bcc6b040204ea4930caff13a0eac92ed97f1331894a8d4e55b'
+    image: 'index.docker.io/sourcegraph/symbols:insiders@sha256:fee34e5f726dca698bd8db1c4510a182d616d130bc0b18d7aa15bae9734f23e0'
     cpus: 2
     mem_limit: '4g'
     environment:
@@ -459,7 +459,7 @@ services:
   #
   cadvisor:
     container_name: cadvisor
-    image: 'index.docker.io/sourcegraph/cadvisor:insiders@sha256:8d4cb4975988f2da9659b4fd62f712abe53feab6075d9662074ae7041d089ea5'
+    image: 'index.docker.io/sourcegraph/cadvisor:insiders@sha256:f67902b8b2a5ceea74485d9a793dd68cbec627c7515053396125f25997f5efd1'
     cpus: 1
     mem_limit: '1g'
     volumes:
@@ -486,7 +486,7 @@ services:
   #
   jaeger:
     container_name: jaeger
-    image: 'index.docker.io/sourcegraph/jaeger-all-in-one:insiders@sha256:07c707ae07493dcca44865404690a139e4a4aad33136457e4586fa3e644c6ae9'
+    image: 'index.docker.io/sourcegraph/jaeger-all-in-one:insiders@sha256:ffb807364a337a2fb0f019aca648ae19e877606d11090a3e5804cfda5ccbe0d0'
     cpus: 0.5
     mem_limit: '512m'
     ports:
@@ -563,7 +563,7 @@ services:
   # would be bad but it can be rebuilt given enough time.)
   codeinsights-db:
     container_name: codeinsights-db
-    image: "index.docker.io/sourcegraph/codeinsights-db:insiders@sha256:f985af2fef860cc48be40ded864df025b8794b02b86e66cbc6c55bfe3c418831"
+    image: "index.docker.io/sourcegraph/codeinsights-db:insiders@sha256:bc3b70e5a93cdb0756837d74e35fd3c257823fad42ed8f5a1efeaf03d69824a3"
     cpus: 4
     mem_limit: "2g"
     environment:
@@ -584,7 +584,7 @@ services:
   #
   minio:
     container_name: minio
-    image: 'index.docker.io/sourcegraph/minio:insiders@sha256:3d7a0147396ea799284ba707765d477797518425682c9aa65faa5883a63fac4f'
+    image: 'index.docker.io/sourcegraph/minio:insiders@sha256:4f39c3fa2ecf208c0df013e36883d25c3eb8a88ec10d6b1718c2f2b62a34c665'
     cpus: 1
     mem_limit: '1g'
     environment:
@@ -611,7 +611,7 @@ services:
   #
   redis-cache:
     container_name: redis-cache
-    image: 'index.docker.io/sourcegraph/redis-cache:insiders@sha256:7820219195ab3e8fdae5875cd690fed1b2a01fd1063bd94210c0e9d529c38e56'
+    image: 'index.docker.io/sourcegraph/redis-cache:insiders@sha256:35245d84f0d154d12501ea4b997fa21913939cc4ce7c4de288b44d1d7e50624c'
     cpus: 1
     mem_limit: '7g'
     volumes:
@@ -627,7 +627,7 @@ services:
   #
   redis-store:
     container_name: redis-store
-    image: 'index.docker.io/sourcegraph/redis-store:insiders@sha256:e8467a8279832207559bdfbc4a89b68916ecd5b44ab5cf7620c995461c005168'
+    image: 'index.docker.io/sourcegraph/redis-store:insiders@sha256:5e9fec6f4f9801fcd012a5eb4d35d1f50e9e7c6aad2733790698ab28b8378930'
     cpus: 1
     mem_limit: '7g'
     volumes:
